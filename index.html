@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>A Jornada sob a Lua Minguante</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="lua.png" alt="">
+            <p>Você está em uma cidade costeira pequena, conhecida por suas lendas marítimas. Em uma noite clara, uma lua minguante ilumina o horizonte e você encontra um antigo diário em uma loja de antiguidades. O diário fala de um tesouro escondido que só pode ser encontrado durante uma lua minguante.</p>
+            <button class="btn-proximo" data-proximo="1">Seguir as pistas do diário e explorar a praia.</button>
+            <button class="btn-proximo" data-proximo="2">Investigar a loja de antiguidades para mais informações sobre o diário.</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <p>Você decide seguir as pistas do diário e explorar a praia. A lua minguante ilumina seu caminho enquanto você procura os marcos descritos. Finalmente, encontra uma rocha grande e uma entrada escondida que leva a uma caverna. Dentro, você encontra um baú antigo. Ao abri-lo, descobre dois itens diferentes:</p>
+            <button class="btn-proximo" data-proximo="3">Um pergaminho com uma mensagem enigmática sobre uma missão especial.</button>
+            <button class="btn-proximo" data-proximo="0">Desistir e voltar para casa</button>
+        </div>
+            <div class="passo" id="passo-2">
+                <p>Você decide investigar a loja de antiguidades e descobre um pergaminho com uma mensagem enigmática sobre uma missão especial.</p>
+                <button class="btn-proximo" data-proximo="3">Continuar.</button>
+            </div>
+            <div class="passo" id="passo-3">
+                <p>O pergaminho descreve uma missão para encontrar um objeto perdido de um antigo explorador. A missão leva você a uma série de locais históricos na cidade.</p>
+                <button class="btn-proximo" data-proximo="4">Ir aos locais.</button>
+                <button class="btn-proximo" data-proximo="4">Seguir o brilho da lua minguante</button>
+            </div>
+            <div class="passo" id="passo-4">
+                <img src="diario.png" alt="">
+                <p>Parabéns, você acha um diário de bordo com detalhes fascinantes sobre as viagens de um antigo capitão que navegou por essas águas. O diário inclui anotações sobre descobertas geográficas, encontros com outras culturas e até mesmo a localização de outras relíquias escondidas na região.</p>  
+                    
+              <p>Você descobre mais sobre a vida e os feitos do explorador conforme visita os locais, em cada local tem um objeto e uma pesquisa, com todas as informações que ajudariam a cidade. A jornada resulta em uma colaboração com um museu local para preservar e compartilhar a história do explorador.</p>
+                <button class="btn-proximo" data-proximo="0">Fim</button>
+            </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
+    </html>
